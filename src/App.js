@@ -34,6 +34,11 @@ function App() {
       console.log('An error occurred while retrieving token. ', err);
       // ...
     });
+
+    const channel = new BroadcastChannel("notifications");
+    channel.addEventListener("message", (event) => {
+      console.log("Receive background: ", event.data);
+    });
   });
 
   return (
