@@ -4,13 +4,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebas
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDZ72GZvfYH1Mz0WHImkKA6pdZvHxCiZ3I",
-  authDomain: "springbootnotifapplication.firebaseapp.com",
-  projectId: "springbootnotifapplication",
-  storageBucket: "springbootnotifapplication.appspot.com",
-  messagingSenderId: "914312176526",
-  appId: "1:914312176526:web:26026bbe9b07c7522e3adf",
-  measurementId: "G-910B39C8MZ"
+  apiKey: "AIzaSyBsTHR5C1xwo6ADx3g3hnItyvv8pVbi7A8",
+  authDomain: "firstapp-694ee.firebaseapp.com",
+  databaseURL: "https://firstapp-694ee-default-rtdb.firebaseio.com",
+  projectId: "firstapp-694ee",
+  storageBucket: "firstapp-694ee.firebasestorage.app",
+  messagingSenderId: "359875677081",
+  appId: "1:359875677081:web:fbb4d6c3388a7b5d426108",
+  measurementId: "G-7R061Q77YH"
 };
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
