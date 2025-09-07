@@ -1,10 +1,10 @@
 // Firebase Messaging Service Worker
 
 self.addEventListener("push", (event) => {
-    const notif = event.data.json().data;
+    const pushContent = event.data.json();
+    console.log(pushContent);
 
-    const {title, body} = notif;
-    console.log(notif);
+    const {title, body} = pushContent.notification;
 
     self.registration.showNotification(title, {
         body: body,
